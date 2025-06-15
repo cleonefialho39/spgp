@@ -1,0 +1,57 @@
+/* Estilos específicos para o footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+
+.footer-content {
+    transition: all 0.3s ease;
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura */
+}
+
+.footer.collapsed {
+    padding: 0.5rem; /* Aumentei um pouco para melhor visualização */
+}
+
+.footer.collapsed .footer-details {
+    display: none;
+}
+
+.footer.collapsed .footer-content p:first-child {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-details {
+    margin-top: 1rem;
+    border-top: 1px solid #555;
+    padding-top: 1rem;
+    width: 100%; /* Garante que ocupe toda a largura */
+}
+
+/* Efeito hover para feedback visual */
+.footer:hover {
+    background-color: #444;
+}
+
+/* Centraliza todos os parágrafos dentro do footer */
+.footer p {
+    margin: 0.3rem 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+}

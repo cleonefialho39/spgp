@@ -1,0 +1,56 @@
+// Estrutura de pastas sugerida para o sistema de gerenciamento de parceiros
+
+sistema_parceiros_pagamento/
+├── app/
+│   ├── Controllers/
+│   │   ├── AuthController.php
+│   │   ├── ParceiroController.php
+│   │   ├── FilialController.php
+│   │   ├── PagamentoController.php
+│   │   ├── OrdemServicoController.php
+│   │   └── AdminController.php
+│   ├── Models/
+│   │   ├── Usuario.php
+│   │   ├── Parceiro.php
+│   │   ├── Filial.php
+│   │   ├── OrdemServico.php
+│   │   └── Pagamento.php
+│   ├── Services/
+│   │   ├── LdapService.php
+│   │   ├── EmailService.php
+│   │   └── PdfGeneratorService.php
+│   └── Helpers/
+│       └── Utils.php
+├── config/
+│   ├── auth.php
+│   ├── database.php
+│   ├── email.php
+│   └── ldap.php
+├── database/
+│   └── migrations/
+│       ├── create_usuarios_table.php
+│       ├── create_parceiros_table.php
+│       ├── create_filiais_table.php
+│       ├── create_ordens_servico_table.php
+│       └── create_pagamentos_table.php
+├── public/
+│   └── index.php
+├── resources/
+│   ├── views/
+│   │   ├── auth/
+│   │   │   └── login.blade.php
+│   │   ├── parceiros/
+│   │   │   └── cadastro.blade.php
+│   │   ├── os/
+│   │   │   └── nova.blade.php
+│   │   └── admin/
+│   │       ├── configuracoes.blade.php
+│   │       └── relatorios.blade.php
+├── routes/
+│   └── web.php
+├── storage/
+│   └── pdfs/
+├── .env
+├── composer.json
+├── README.md
+

@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+/* Estilos para o header */
+.header {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.header-title {
+    margin-left: 15px;
+    font-size: 1.2rem;
+    color: white;
+}

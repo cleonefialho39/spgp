@@ -1,0 +1,60 @@
+/* sidebar.css - Versão Simplificada */
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.menu-categoria {
+    margin-bottom: 20px;
+}
+
+.categoria-titulo {
+    font-weight: 600;
+    color: #2c3e50;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.menu-itens {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-link {
+    display: block;
+    padding: 8px 10px;
+    color: #34495e;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: all 0.2s;
+}
+
+.menu-link:hover {
+    background-color: #e0e0e0;
+}
+
+.menu-link.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.sidebar-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 8px;
+    height: 50px;
+    background: #ccc;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+/* Acessibilidade e responsividade */
+.sidebar {
+    max-width: 100%;
+    overflow-x: hidden;
+}
