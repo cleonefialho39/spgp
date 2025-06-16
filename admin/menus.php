@@ -4,7 +4,6 @@
  **********************************************/
 define('PROJECT_ROOT', '/var/www/html/spgp/');
 require_once PROJECT_ROOT . 'config/database.php';
-require_once PROJECT_ROOT . 'includes/layout.php';
 
 try {
     $pdo = getDbConnection();
