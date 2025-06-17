@@ -3,7 +3,6 @@ define('PROJECT_ROOT', '/var/www/html/spgp/');
 
 // Carrega as configurações
 require_once PROJECT_ROOT . 'config/database.php';
-require_once PROJECT_ROOT . 'includes/layout.php';
 
 // Estabelece conexão com o banco de dados
 try {
